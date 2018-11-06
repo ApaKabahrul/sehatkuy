@@ -1,3 +1,13 @@
+.batas_k{
+    border-style: groove;
+    color:#000;
+    background-color:FF3399;
+    padding:12px 24px;
+    padding-top:32px;
+    padding-bottom:32px;
+    margin-top:16px;
+	font-weight: unset;
+  }
 
 .batas{
     border-style: groove;
