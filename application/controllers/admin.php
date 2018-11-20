@@ -72,6 +72,112 @@ class Admin extends CI_Controller{
 
 
 
+
+	public function edit_penyakit( $offset = 0 ){
+		$data['content'] = $this->db->get("data_penyakit");
+		$this->load->view('crud/data_penyakit',$data);
+		$this->footer();
+	}
+
+		public function add_penyakit(){
+			$this->load->view('crud/add_penyakit');
+			$this->footer();
+		}
+
+		public function aksi_add_penyakit(){
+		 $data = array(
+		 	'nama_penyakit' => $this->input->post('nama_penyakit'),
+		 	'penyebab' => $this->input->post('penyebab'),
+		 	'nama_obat' => $this->input->post('nama_obat')
+		 	);
+		 $this->db->insert("data_penyakit", $data);
+		
+		redirect(base_url("edit_penyakit"));
+		}
+
+		public function upd_penyakit( $id_penyakit = NULL){
+			$this->db->where('id_penyakit',$id_penyakit);
+			$data['content'] = $this->db->get("data_penyakit");
+			$this->load->view('crud/upd_penyakit',$data);
+			$this->footer();
+			}
+
+
+		public function aksi_upd_penyakit( $id_penyakit = ''){
+		 $data = array(
+		 	'nama_penyakit' => $this->input->post('nama_penyakit'),
+		 	'penyebab' => $this->input->post('penyebab'),
+		 	'nama_obat' => $this->input->post('nama_obat')
+		 	);
+
+		 	$this->db->where('id_penyakit',$id_penyakit);
+		 	$this->db->update("data_penyakit", $data);
+		
+		redirect(base_url("edit_penyakit"));
+		}
+
+		public function del_penyakit( $id_penyakit = NULL){
+			$this->db->where('id_penyakit',$id_penyakit);
+			$this->db->delete('data_penyakit');
+		
+		redirect(base_url("edit_penyakit"));
+		}
+
+
+		public function edit_lokasi( $offset = 0 ){
+		$data['content'] = $this->db->get("rs");
+		$this->load->view('crud/data_rs',$data);
+		$this->footer();
+	}
+
+		public function add_lokasi(){
+			$this->load->view('crud/add_lokasi');
+			$this->footer();
+		}
+
+		public function aksi_add_lokasi(){
+		 $data = array(
+		 	'Nama_Rs' => $this->input->post('Nama_Rs'),
+		 	'Alamat_Rs' => $this->input->post('Alamat_Rs'),
+		 	'Telephon_Rs' => $this->input->post('Telephon_RS'),
+		 	'Tempat_Terdekat_Rs' => $this->input->post('Tempat_Terdekat_Rs')
+		 	);
+		 $this->db->insert("rs", $data);
+		
+		redirect(base_url("edit_lokasi"));
+		}
+
+		public function upd_lokasi( $Nama_Rs = NULL){
+			$this->db->where('Nama_Rs',$Nama_Rs);
+			$data['content'] = $this->db->get("rs");
+			$this->load->view('crud/upd_lokasi',$data);
+			$this->footer();
+			}
+
+
+		public function aksi_upd_lokasi( $Nama_Rs = ''){
+		 $data = array(
+		 	'Nama_Rs' => $this->input->post('Nama_Rs'),
+		 	'Alamat_Rs' => $this->input->post('Alamat_Rs'),
+		 	'Telephon_Rs' => $this->input->post('Telephon_Rs'),
+		 	'Tempat_Terdekat_Rs' => $this->input->post('Tempat_Terdekat_Rs')
+		 	);
+
+		 	$this->db->where('Nama_Rs',$Nama_Rs);
+		 	$this->db->update("rs", $data);
+		
+		redirect(base_url("edit_lokasi"));
+		}
+
+		public function del_lokasi( $Nama_Rs = NULL){
+			$this->db->where('Nama_Rs',$Nama_Rs);
+			$this->db->delete('rs');
+		
+		redirect(base_url("edit_lokasi"));
+		}
+
+
+
 	public function footer()
 	{
 		$this->load->view('footer');
