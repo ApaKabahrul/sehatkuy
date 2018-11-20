@@ -12,6 +12,11 @@ class Home extends CI_Controller {
 		$this->load->model('search_model');
 	}
 
+	/*public function agadmigin(){
+		$this->load->view('crud/login');
+		$this->footer();
+	}*/
+
 
 	public function index()
 	{
@@ -59,37 +64,37 @@ class Home extends CI_Controller {
 	{
 
 		$data['content'] = $this->db->get("data_obat");
-		$this->load->view('crud/data_obat', $data);
+		$this->load->view('data_obat', $data);
 		$this->footer();
 	}
 
 
-	public function cari(){
+		public function cari(){
 		
-		$data['cariberdasarkan']=$this->input->post('cariberdasarkan');
-		$data['ygdicari']=$this->input->post('ygdicari');
-		$data['data_obat']=$this->search_model->cari($data['cariberdasarkan'],$data['ygdicari']);
-		$this->load->view("crud/data_obat",$data);
-		$this->footer();
-	}
+			$data['cariberdasarkan']=$this->input->post('cariberdasarkan');
+			$data['ygdicari']=$this->input->post('ygdicari');
+			$data['data_obat']=$this->search_model->cari($data['cariberdasarkan'],$data['ygdicari']);
+			$this->load->view("data_obat",$data);
+			$this->footer();
+		}
 
-	public function cari_1(){
+		public function cari_1(){
 		
-		$data['cariberdasarkan_1']=$this->input->post('cariberdasarkan_1');
-		$data['ygdicari_1']=$this->input->post('ygdicari_1');
-		$data['data_penyakit']=$this->search_model->cari_1($data['cariberdasarkan_1'],$data['ygdicari_1']);
-		$this->load->view("penyakit",$data);
-		$this->footer();
-	}
+			$data['cariberdasarkan_1']=$this->input->post('cariberdasarkan_1');
+			$data['ygdicari_1']=$this->input->post('ygdicari_1');
+			$data['data_penyakit']=$this->search_model->cari_1($data['cariberdasarkan_1'],$data['ygdicari_1']);
+			$this->load->view("penyakit",$data);
+			$this->footer();
+		}
 
-	public function cari_2(){
+		public function cari_2(){
 		
-		$data['cariberdasarkan_2']=$this->input->post('cariberdasarkan_2');
-		$data['ygdicari_2']=$this->input->post('ygdicari_2');
-		$data['rs']=$this->search_model->cari_2($data['cariberdasarkan_2'],$data['ygdicari_2']);
-		$this->load->view("RS",$data);
-		$this->footer();
-	}
+			$data['cariberdasarkan_2']=$this->input->post('cariberdasarkan_2');
+			$data['ygdicari_2']=$this->input->post('ygdicari_2');
+			$data['rs']=$this->search_model->cari_2($data['cariberdasarkan_2'],$data['ygdicari_2']);
+			$this->load->view("RS",$data);
+			$this->footer();
+		}
 
 
 	public function penyakit( $offset = 0)
