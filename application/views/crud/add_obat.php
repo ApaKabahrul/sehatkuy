@@ -16,10 +16,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <body style="background-color: #f9dbf0">
 	<ul>
-  <li><a href="">Admin</a></li>
+  <li><a href="/codeigniter/admin">Admin</a></li>
   <li><a class="active" href="/codeigniter/edit_obat">Edit Obat</a></li>
-  <li><a href="">Edit Penyakit</a></li>
-  <li><a href="">Edit Lokasi</a></li>
+  <li><a href="/codeigniter/edit_penyakit">Edit Penyakit</a></li>
+  <li><a href="/codeigniter/edit_lokasi">Edit Lokasi</a></li>
 </ul>
 	
 <br>
@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<input type="text" name="dosis_anak" placeholder="Dosis Anak (max mg/hari)"> <br>
 		<input type="text" name="efek_samping" placeholder="Efek Samping"> <br>
 		<input type="text" name="harga_obat" placeholder="Harga (/strip)"> <br>
-		<input type="submit" value="Save">
+		<input type="submit" value="Tambah">
 	</form>
 
  	

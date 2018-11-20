@@ -14,10 +14,10 @@
 </head>
 
 <ul>
-  <li><a class="active" href="">Admin</a></li>
+  <li><a class="active" href="/codeigniter/admin">Admin</a></li>
   <li><a href="/codeigniter/edit_obat">Edit Obat</a></li>
-  <li><a href="">Edit Penyakit</a></li>
-  <li><a href="">Edit Lokasi</a></li>
+  <li><a href="/codeigniter/edit_penyakit">Edit Penyakit</a></li>
+  <li><a href="/codeigniter/edit_lokasi">Edit Lokasi</a></li>
 </ul>
 	
 <br>
