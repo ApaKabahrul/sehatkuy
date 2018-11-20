@@ -8,3 +8,7 @@ Tugas Besar PABW
 20-Nov-18 14:53 Upload crud <- add_obat.php, admin.php, data_obat.php, login.php, Salah.php, upd_obat.php\
 20-Nov-18 14:56 Upload model <- login_model.php\
 20-Nov-18 14:57 Upload css <- login.css\
+20-Nov-18 20:04 Update Sql\
+20-Nov-18 20:07 Upload crud\
+20-Nov-18 20:08 Update controller <- admin.php\
+20-Nov-18 20:08 Update config <- routes.php\
