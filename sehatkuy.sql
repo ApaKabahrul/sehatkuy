@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2018 at 12:22 PM
+-- Generation Time: Nov 20, 2018 at 02:03 PM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -62,7 +62,6 @@ CREATE TABLE `data_obat` (
 --
 
 INSERT INTO `data_obat` (`id_obat`, `nama_obat`, `manfaat_obat`, `dosis_dewasa`, `dosis_anak`, `efek_samping`, `harga_obat`) VALUES
-(1, 'Paracetamol', 'Pereda nyeri <br>\r\nPereda demam', 1000, 500, 'Mual <br>\r\nUrin berwarna gelap', 3500),
 (2, 'Ibuprofen', 'Pereda nyeri <br>\r\nPenurun demam <br>\r\nMengobati asam urat <br>', 300, 100, 'Nyeri dada <br>\r\nSusah buang air <br>\r\nPerut sakit <br>', 6000),
 (3, 'Amoxicillin', 'Antibiotik <br>\r\nMengobati infeksi bakteri <br>', 500, 500, 'Mual <br>\r\nSakit kepala <br>', 5000),
 (4, 'Asam Mefenamat', 'Pereda nyeri,<br>\r\nObat sakit gigi,<br>\r\nObat sakit kepala\r\n', 500, 250, 'Mual,<br>\r\nMulut kering,<br>\r\nBerkeringat', 4200),
@@ -120,26 +119,26 @@ CREATE TABLE `rs` (
 --
 
 INSERT INTO `rs` (`Nama_Rs`, `Alamat_Rs`, `Telephon_RS`, `Tempat_Terdekat_Rs`) VALUES
-('Rumah Sakit Abdul Moeloek', ' Jalan Dr. Rivai Nomor 6 Bandar Lampung.', '(0721) 703312 / 702455.', 'Rumah Sakit DKT.'),
-('Rumah Sakit A Dadi Tjokrodipo', 'Jalan Basuki Rahmat Nomor 73 Bandar Lampung.', '(0721) 471723 / 470177.', 'Kantor Perwakilan BPKP Provinsi Lampung (di depannya persis), Dinas Perhubungan Kota Bandar Lampung, Rumah Makan Do\'a Saudara, Wisma Andalas Asri, Kanwil Pajak Lampung-Bengkulu, Kantor BPS Provinsi Lampung.'),
-('RS Bumi Waras', 'Jalan Wolter Monginsidi Nomor 235 Bandar Lampung.', '(0721) 254589', 'Hotel Pop, Toro Guest House, Wisma Mustika, Bappeda Provinsi Lampung.'),
+(' RSIA Restu Bunda Lampung', 'Jalan KH. Hasyim Ashari Nomor73,Pakuon Teluk Betung Selatan, Bandar Lampung.', '(0721) 484185.', 'Iker Peace Shop, Bintang Abadi Motor, Air Minum Pemuka Raya, Toko Mas Logam Mulia.\r\n'),
 ('RS Advent Bandar Lampung ', 'Jalan Teuku Umar Nomor 48 Kedaton, Bandar Lampung 35148.', '(0721) 703459', 'Pasar Koga, Roman Bakery, Bank Mandiri, Zoya Lampung, Mie Koga, Nasi Goreng Abbas.'),
-('RS Imanuel Way Halim', 'Jalan Soekarno Hatta Nomor 1 Bandar Lampung (By Pass).', '(0721) 704900', ' Pondok Singgah RM, Rumah Makan Kusumo Ayu II, RM Pakde Muktar, Taman Hutan Kota'),
-('RS Pertamina Bintang Amin', 'Jalan Pramuka Nomor 27 Bandar Lampung.', '(0721) 273601, 271116', ' Universitas Malahayati, SMP N 2 Bandar Lampung.'),
-('RS Urip Sumoharjo', 'Jalan Urip Sumoharjo Nomor 200, Sukarame, Bandar Lampung.', '(0721) 771322.', 'Harion Hostel Syariah.'),
+('RS Anugerah Medika', 'Jalan Tulang Bawang Nomor 21-23, Enggal, Bandar Lampung, 35213', '(0721) 262139.', ' Hotel Pelangi, Gramedia Bandar Lampung, Auto 2000 Bandar Lampung, SMA Arjuna, Pindang Meranjat.'),
 ('RS Bhayangkara Polda Lampung', 'Jalan Pramuka Nomor 88, Bandar Lampung.', '(0721) 706402.', ' Samsat Bandar Lampung, Radio Pratama Mahardika, Kwarda Gerakan Pramuka Lampung.'),
+('RS Bumi Waras', 'Jalan Wolter Monginsidi Nomor 235 Bandar Lampung.', '(0721) 254589', 'Hotel Pop, Toro Guest House, Wisma Mustika, Bappeda Provinsi Lampung.'),
 ('RS DKT Lampung', ' Jalan dr. Ahmad Rivai Nomor 7, Penengahan, Bandar Lampung.', ' (0721) 770430.', ' RSUD Abdul Moeloek Lampung.'),
 ('RS Graha Husada', 'Jalan Gajah Mada Nomor 6 GH, Bandar Lampung.', '(0721) 240000.', 'Kedai Surabi Duren Mang Uban, Roman Bakery, CV Abah, Bakso Son Haji Sony VII, Dr. Helmi Muchtar, Spm.\r\n'),
-(' RSIA Restu Bunda Lampung', 'Jalan KH. Hasyim Ashari Nomor73,Pakuon Teluk Betung Selatan, Bandar Lampung.', '(0721) 484185.', 'Iker Peace Shop, Bintang Abadi Motor, Air Minum Pemuka Raya, Toko Mas Logam Mulia.\r\n'),
-('RSIA Bunda Assyifa', 'Jalan Dr. Susilo Nomor 54, Pahoman, Bandar Lampung.', '(0721) 259259, 240474.', 'Dinas Kesehatan Provinsi Lampung, KPPN Bandar Lampung, LPMP Provinsi Lampung.\r\n'),
-('RSIA Puri Betik Hati', 'Jalan Pajajaran Nomor 109 Jagabaya II, Bandar Lampung, 35132.', '(0721) 787799', ' Majelis Taklim Khusnul Khotimah, Ayam Keprek, Bintang Gypsum, Toko Putra Sunda.'),
-('RSIA Mutiara PUTRI', 'Jalan Hos Cokroaminoto Nomor 96, Tanjung Karang, Bandar Lampung, 35121', ' (0721) 252519.', 'Hotel Enggal, SMK N 4 Bandar Lampung, SMP N 4 Bandar Lampung, BNI, Chandra Supermarket.\r\n'),
-('RSIA Santa Anna', ' Jalan Hasanuddin Nomor 27 Kupang Kota, Teluk Betung Utara, Bandar Lampung.', '(0721) 482424.', ' Dinas Pemuda dan Olah Raga Provinsi Lampung, PMI Lampung, Korpri, Kantor Pos Teluk Betung, Papa Joe, Bank Lippo.'),
-('Rumah Sakit Bersalin Kosasih', 'Jalan Tanjungpura Nomor 754, Pidada, Panjang, Bandar Lampung.', '(0721) 31754.', 'Swadex, Mayora, Anugrah Esa 4.\r\n'),
-('RS Anugerah Medika', 'Jalan Tulang Bawang Nomor 21-23, Enggal, Bandar Lampung, 35213', '(0721) 262139.', ' Hotel Pelangi, Gramedia Bandar Lampung, Auto 2000 Bandar Lampung, SMA Arjuna, Pindang Meranjat.'),
+('RS Imanuel Way Halim', 'Jalan Soekarno Hatta Nomor 1 Bandar Lampung (By Pass).', '(0721) 704900', ' Pondok Singgah RM, Rumah Makan Kusumo Ayu II, RM Pakde Muktar, Taman Hutan Kota'),
 ('RS Kartika', 'Jalan Gatot Subroto Nomor 59 Kota Bandar Lampung.', ' (0721) 486686.', ' Hotel Aston Lampung, Balai Besar Wilayah Sungai Mesuji.'),
 ('RS Khusus Mata Permana Sari', 'Jalan HOS. Cokroaminoto Nomor 87 Bandar Lampung.', '(0721) 240588.', 'RSIA Mutiara Putri, Pelangi Residence, SMKN 4 Bandar Lampung, Akbid Adila, BRI Kanwil Lampung.\r\n'),
-('RSIA Sinta', 'Jalan Imam Bonjol Nomor 512, Langkapura, Bandar Lampung.', '(0721) 266115.', ' STIE Krakatau, Universitas Saburai, Bakso Solo Baru.\r\n');
+('RS Pertamina Bintang Amin', 'Jalan Pramuka Nomor 27 Bandar Lampung.', '(0721) 273601, 271116', ' Universitas Malahayati, SMP N 2 Bandar Lampung.'),
+('RS Urip Sumoharjo', 'Jalan Urip Sumoharjo Nomor 200, Sukarame, Bandar Lampung.', '(0721) 771322.', 'Harion Hostel Syariah.'),
+('RSIA Bunda Assyifa', 'Jalan Dr. Susilo Nomor 54, Pahoman, Bandar Lampung.', '(0721) 259259, 240474.', 'Dinas Kesehatan Provinsi Lampung, KPPN Bandar Lampung, LPMP Provinsi Lampung.\r\n'),
+('RSIA Mutiara PUTRI', 'Jalan Hos Cokroaminoto Nomor 96, Tanjung Karang, Bandar Lampung, 35121', ' (0721) 252519.', 'Hotel Enggal, SMK N 4 Bandar Lampung, SMP N 4 Bandar Lampung, BNI, Chandra Supermarket.\r\n'),
+('RSIA Puri Betik Hati', 'Jalan Pajajaran Nomor 109 Jagabaya II, Bandar Lampung, 35132.', '(0721) 787799', ' Majelis Taklim Khusnul Khotimah, Ayam Keprek, Bintang Gypsum, Toko Putra Sunda.'),
+('RSIA Santa Anna', ' Jalan Hasanuddin Nomor 27 Kupang Kota, Teluk Betung Utara, Bandar Lampung.', '(0721) 482424.', ' Dinas Pemuda dan Olah Raga Provinsi Lampung, PMI Lampung, Korpri, Kantor Pos Teluk Betung, Papa Joe, Bank Lippo.'),
+('RSIA Sinta', 'Jalan Imam Bonjol Nomor 512, Langkapura, Bandar Lampung.', '(0721) 266115.', ' STIE Krakatau, Universitas Saburai, Bakso Solo Baru.\r\n'),
+('Rumah Sakit A Dadi Tjokrodipo', 'Jalan Basuki Rahmat Nomor 73 Bandar Lampung.', '(0721) 471723 / 470177.', 'Kantor Perwakilan BPKP Provinsi Lampung (di depannya persis), Dinas Perhubungan Kota Bandar Lampung, Rumah Makan Do\'a Saudara, Wisma Andalas Asri, Kanwil Pajak Lampung-Bengkulu, Kantor BPS Provinsi Lampung.'),
+('Rumah Sakit Abdul Moeloek', ' Jalan Dr. Rivai Nomor 6 Bandar Lampung.', '(0721) 703312 / 702455.', 'Rumah Sakit DKT.'),
+('Rumah Sakit Bersalin Kosasih', 'Jalan Tanjungpura Nomor 754, Pidada, Panjang, Bandar Lampung.', '(0721) 31754.', 'Swadex, Mayora, Anugrah Esa 4.\r\n');
 
 --
 -- Indexes for dumped tables
@@ -164,6 +163,12 @@ ALTER TABLE `data_penyakit`
   ADD PRIMARY KEY (`id_penyakit`);
 
 --
+-- Indexes for table `rs`
+--
+ALTER TABLE `rs`
+  ADD PRIMARY KEY (`Nama_Rs`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -177,13 +182,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `data_obat`
 --
 ALTER TABLE `data_obat`
-  MODIFY `id_obat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_obat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `data_penyakit`
 --
 ALTER TABLE `data_penyakit`
-  MODIFY `id_penyakit` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_penyakit` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
