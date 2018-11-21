@@ -176,7 +176,26 @@ class Admin extends CI_Controller{
 		redirect(base_url("edit_lokasi"));
 		}
 
+		public function edit_admin( ){
+			
+			$this->load->view('crud/add_admin');
+			$this->footer();
+		}
 
+		public function aksi_add_admin(){
+		
+		 $data = array(
+		 	'username' => $this->input->post('username'),
+		 	'password' => $this->input->post('password')
+
+		 	);
+		 $this->db->insert("admin", $data);
+		
+		redirect(base_url("admin"));
+		}
+
+
+		
 
 	public function footer()
 	{
