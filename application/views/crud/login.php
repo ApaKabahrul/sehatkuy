@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/sehatkuy.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/login.css">
-
+<img src="logo.png" alt="logo" style="width:20%;height:auto;">
 <body style="background-color: #f9dbf0">
 	
 <div class="login-page">
