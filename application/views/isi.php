@@ -6,6 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <title> SEHAT Kuy</title>
 
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/sehatkuy.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
 
 
 
@@ -28,12 +29,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <br>
 
 <body style="background-color: #f9dbf0">
-	<div class ="line">
-		<h1>WELCOME TO OUR WEBSITE</h1>
-		<p>Building a Healthy Community One Individual at a Time.</p>
-		<p>Your Health.Our Mission.</p>
-		<p>Your Good Health is Our Greatest Achievement.</p>
-	</div>			
+
+<div class="container">
+	<input type="radio" name="slide" class="radio-nav" id="nav-1" checked/>
+	<input type="radio" name="slide" class="radio-nav" id="nav-2"/>
+	<input type="radio" name="slide" class="radio-nav" id="nav-3"/>
+
+	<ul class="slide">
+		<li class="slide-1">
+			<img src="images/post1.jpg"/>
+			<div class="caption">Manfaat Olahraga bagi Kesehatan Mental</div>
+		</li>
+		<li class="slide-2">
+			<img src="images/post2.jpg"/>
+			<div class="caption">7 Tips Pola Hidup Sehat yang Harus Mulai Dilakukan dari Sekarang</div>
+		</li>
+		<li class="slide-3">
+			<img src="images/post3.jpg"/>
+			<div class="caption">Kebiasaan Hidup Sehat yang Baik Dilakukan Sebelum Tidur Malam</div>
+		</li>
+	</ul>
+
+	<div class="nav-arrow nav-next">
+		<label class="nav-1" for="nav-1">></label>
+		<label class="nav-2" for="nav-2">></label>
+		<label class="nav-3" for="nav-3">></label>
+	</div>
+	<div class="nav-arrow nav-prev">
+		<label class="nav-1" for="nav-1"><</label>
+		<label class="nav-2" for="nav-2"><</label>
+		<label class="nav-3" for="nav-3"><</label>
+	</div>
+</div>
+
+			
 </body>
 
 
