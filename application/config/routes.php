@@ -7,6 +7,7 @@ $route['agadmigin'] = 'login/agadmigin';
 	$route['edit_obat'] = 'admin/edit_obat';
 	$route['edit_penyakit'] = 'admin/edit_penyakit';
 	$route['edit_lokasi'] = 'admin/edit_lokasi';
+	$route['edit_admin'] = 'admin/edit_admin';
 $route['obat'] = 'home/data_obat';
 $route['sehat'] = 'home/sehat';
 	$route['manfaat_olahraga'] = 'home/manfaat_olahraga';
