@@ -8,7 +8,7 @@
 
 	<a href="/codeigniter">
 		<div class="main">
-		<img src="logo.png" alt="logo" style="width:20%;height:auto;">
+		<img src="logo.png" alt="logo" style="width:250px;height:auto;">
 	</a>
 
 </head>
@@ -18,6 +18,7 @@
   <li><a href="/codeigniter/edit_obat">Edit Obat</a></li>
   <li><a href="/codeigniter/edit_penyakit">Edit Penyakit</a></li>
   <li><a href="/codeigniter/edit_lokasi">Edit Lokasi</a></li>
+  <li><a href="/codeigniter/edit_admin">Cek Admin</a></li>
 </ul>
 	
 <br>
