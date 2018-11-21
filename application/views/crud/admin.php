@@ -8,7 +8,7 @@
 
 	<a href="/codeigniter">
 		<div class="main">
-		<img src="logo.png" alt="logo" style="width:250px;height:auto;">
+		<img src="logo.png" alt="logo" style="width:20%;height:auto;">
 	</a>
 
 </head>
