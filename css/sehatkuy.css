@@ -44,16 +44,18 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: pink;
+	border-radius:40px;
+    background-color: DarkCyan;
 	color: #fff;
 }
 
 li a.active {
+	border-radius:40px;
 	color: #fff;
-	background-color: #FF3399;
+	background-color: DarkCyan;
 }
 
-.main{
+.judul{
 		max-width: 1200px;
 		margin: auto;
 		padding:20px;
