@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<a href="/codeigniter">
 <div class="main">
-	<img src="logo.png" alt="logo" style="width:25%;height:auto;">
+	<img src="logo.png" alt="logo" style="width:20%;height:auto;">
 </a>
 </head>
 
