@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </ul>
 	
 <br>
-
+<h1 style="text-align: center;">Data Penyakit</h1>
 	<?php echo form_open("home/cari_1");?>
 		<td>Cari Berdasarkan</td><br>
 		<select name="cariberdasarkan_1">
@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<?php echo form_close();?>
 
-	<table>
+	<table class="zebra-table">
 		<tr class="batas">
 			<td>Nama Penyakit</td>
 			<td>Penyebab</td>

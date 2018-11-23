@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </ul>
 	
 <br>
-
+<h1 style="text-align: center;">Data Rumah Sakit di Daerah Bandar Lampung</h1>
 	<?php echo form_open("home/cari_2");?>
 		<td>Cari Berdasarkan</td><br>
 		<select name="cariberdasarkan_2">
@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<?php echo form_close();?>
 
-	<table>
+	<table class="zebra-table">
 		<tr class="batas">
 			<td>Nama Rumah Sakit</td>
 			<td>Alamat</td>

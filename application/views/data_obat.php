@@ -25,7 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </ul>
 	
 <br>
-
+<div>
+	<h1 style="text-align: center;">Data Obat</h1>
 	<?php echo form_open("home/cari");?>
 		<td>Cari Berdasarkan</td><br>
 		<select name="cariberdasarkan">
@@ -38,9 +39,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<input type="submit" value="Cari">
 
 	<?php echo form_close();?>
-
+	
 	<div>
-	<table>
+	<table class="zebra-table">
 		<tr class="batas_k">
 			<td>Nama</td>
 			<td>Manfaat</td>
@@ -77,6 +78,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <?php } ?>
 		
 	</table>
+</div>
 </div>
 </body>
 </html>
