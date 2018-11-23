@@ -1,16 +1,36 @@
+
+.zebra-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 3px 1px #ddd;
+  overflow: hidden;
+  border:10px solid #fff;
+}
+  .zebra-table th,.zebra-table td{
+    vertical-align: top;
+    padding:10px 7px;
+    text-align: left;
+    margin:0;
+  }
+    .zebra-table tbody tr:nth-child(odd) { 
+      background:#eee;
+    }
+
+
 .batas_k{
-    border-style: groove;
+
+    border-collapse: collapse;
     color:#000;
     background-color:FF3399;
-    padding:12px 24px;
-    padding-top:32px;
+    padding:16px 32px;
+    padding-top:50px;
     padding-bottom:32px;
     margin-top:16px;
 	font-weight: unset;
   }
 
 .batas{
-    border-style: groove;
+    border-collapse: collapse;
     color:#000;
     background-color:#f1f1f1;
     padding:12px 24px;
@@ -44,15 +64,13 @@ li a {
 }
 
 li a:hover:not(.active) {
-	border-radius:40px;
-    background-color: DarkCyan;
+    background-color: pink;
 	color: #fff;
 }
 
 li a.active {
-	border-radius:40px;
 	color: #fff;
-	background-color: DarkCyan;
+	background-color: #FF3399;
 }
 
 .main{
@@ -191,7 +209,6 @@ ul.slide {
   }
   /* end */
 
-/* Navigator */
 
 .search-container{
 	float: right;
@@ -242,7 +259,10 @@ ul.slide {
    display: table-cell;
    vertical-align: top;
 }
-
+.paragraph-medium {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 10px 0; }
 .isipostingan{
 	padding: 20px;
 	width: 800px;
@@ -270,7 +290,9 @@ ul.slide {
 	margin:auto;
 	height:auto;
 }
-
+.nextarticle{
+  text-align:center;
+}
 .footer{
    		width: 100%;
    		height: 45px;
